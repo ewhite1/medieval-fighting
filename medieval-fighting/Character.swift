@@ -30,7 +30,7 @@ class Character {
             }
         }
     }
-    init(startingHp: Int, AttackPower: Int) {
+    init(startingHp: Int, attackPower: Int) {
         self._hp = startingHp
         self._attackPower = attackPower
     }
