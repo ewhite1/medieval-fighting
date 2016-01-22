@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BB1270F1C5228CD003491A9 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1270E1C521FC5003491A9 /* Minecraft.ttf */; };
 		EC5A05071C4E537D0014F11C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A05061C4E537D0014F11C /* AppDelegate.swift */; };
 		EC5A05091C4E537D0014F11C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A05081C4E537D0014F11C /* ViewController.swift */; };
 		EC5A050C1C4E537D0014F11C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5A050A1C4E537D0014F11C /* Main.storyboard */; };
@@ -130,6 +131,7 @@
 			files = (
 				EC5A05111C4E537D0014F11C /* LaunchScreen.storyboard in Resources */,
 				EC5A050E1C4E537D0014F11C /* Assets.xcassets in Resources */,
+				2BB1270F1C5228CD003491A9 /* Minecraft.ttf in Resources */,
 				EC5A050C1C4E537D0014F11C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
