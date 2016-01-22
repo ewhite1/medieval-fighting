@@ -2,17 +2,17 @@
 a simple two player fighting game in swift
 
 Here are the requirements:
-- App should be landscape only
+- App should be landscape only(done)
 - App should have two characters. Each character has:
-- HP
-- Attack Power
-- Name
-This is a two player game so each character should have an attack button. When one player attacks, 
+- HP(done)
+- Attack Power(done)
+- Name(done)
+This is a two player game so each character should have an attack button(done). When one player attacks, 
 the other player/button is disabled for 3 seconds before they can attack
 If a player dies, the screen should print who won
 When the game ends, give an option to restart the game
 Use Classes to build your game
-The artwork has been provided as a resource.
+
 
 Optional(to spice it up) Stuff:
 
