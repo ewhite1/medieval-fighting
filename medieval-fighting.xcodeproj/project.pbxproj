@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BB1270F1C5228CD003491A9 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1270E1C521FC5003491A9 /* Minecraft.ttf */; };
+		2BB127111C5229D1003491A9 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB127101C5229D1003491A9 /* Character.swift */; };
 		EC5A05071C4E537D0014F11C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A05061C4E537D0014F11C /* AppDelegate.swift */; };
 		EC5A05091C4E537D0014F11C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A05081C4E537D0014F11C /* ViewController.swift */; };
 		EC5A050C1C4E537D0014F11C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5A050A1C4E537D0014F11C /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		2BB1270E1C521FC5003491A9 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		2BB127101C5229D1003491A9 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		EC5A05031C4E537D0014F11C /* medieval-fighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "medieval-fighting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5A05061C4E537D0014F11C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC5A05081C4E537D0014F11C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				EC5A05061C4E537D0014F11C /* AppDelegate.swift */,
 				EC5A05081C4E537D0014F11C /* ViewController.swift */,
 				EC5A050A1C4E537D0014F11C /* Main.storyboard */,
+				2BB127101C5229D1003491A9 /* Character.swift */,
 				EC5A050D1C4E537D0014F11C /* Assets.xcassets */,
 				EC5A050F1C4E537D0014F11C /* LaunchScreen.storyboard */,
 				EC5A05121C4E537D0014F11C /* Info.plist */,
@@ -146,6 +149,7 @@
 				EC5A05091C4E537D0014F11C /* ViewController.swift in Sources */,
 				EC5A05191C4E54B30014F11C /* readme.md in Sources */,
 				EC5A05071C4E537D0014F11C /* AppDelegate.swift in Sources */,
+				2BB127111C5229D1003491A9 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
