@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BB1270E1C521FC5003491A9 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 		EC5A05031C4E537D0014F11C /* medieval-fighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "medieval-fighting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5A05061C4E537D0014F11C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC5A05081C4E537D0014F11C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 				EC5A05051C4E537D0014F11C /* medieval-fighting */,
 				EC5A05041C4E537D0014F11C /* Products */,
 				EC5A05181C4E54B30014F11C /* readme.md */,
+				2BB1270E1C521FC5003491A9 /* Minecraft.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -291,6 +293,7 @@
 				EC5A05171C4E537D0014F11C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
