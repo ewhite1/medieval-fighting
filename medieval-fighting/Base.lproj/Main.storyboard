@@ -9,6 +9,7 @@
         <mutableArray key="Minecraft.ttf">
             <string>Minecraft</string>
             <string>Minecraft</string>
+            <string>Minecraft</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -54,7 +55,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="206" id="xE2-VA-wYV"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wpp-SD-c6s">
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wpp-SD-c6s">
                                 <rect key="frame" x="435" y="272" width="145" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="PPf-do-3FK"/>
@@ -63,7 +64,7 @@
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="20"/>
                                 <state key="normal" title="Attack" backgroundImage="player2attackbtn"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50E-wk-JmR">
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50E-wk-JmR">
                                 <rect key="frame" x="20" y="272" width="140" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="qiq-hJ-D2I"/>
@@ -72,13 +73,34 @@
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="20"/>
                                 <state key="normal" title="Attack" backgroundImage="player1attackbtn"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lR-KF-Q3B">
+                                <rect key="frame" x="183" y="243" width="234" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="9li-El-na6"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="234" id="BCH-mU-ZPU"/>
+                                    <constraint firstAttribute="height" constant="55" id="XaL-sZ-yaT"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="93" id="h9y-15-GXo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="20"/>
+                                <state key="normal" title="Begin Game" backgroundImage="player1attackbtn"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9li-El-na6"/>
+                                        <exclude reference="BCH-mU-ZPU"/>
+                                        <exclude reference="XaL-sZ-yaT"/>
+                                        <exclude reference="h9y-15-GXo"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Wpp-SD-c6s" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2Iv-kt-NOJ"/>
                             <constraint firstItem="50E-wk-JmR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8XC-Zt-EkT"/>
+                            <constraint firstItem="2lR-KF-Q3B" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IBf-AL-UV1"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LEM-sG-MNa" secondAttribute="bottom" id="IeO-8O-PHT"/>
                             <constraint firstItem="LEM-sG-MNa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Inh-p2-2i9"/>
+                            <constraint firstItem="2lR-KF-Q3B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lgo-CW-KUL"/>
                             <constraint firstItem="J9B-qq-pHU" firstAttribute="top" secondItem="Wpp-SD-c6s" secondAttribute="bottom" id="MxS-iq-eld"/>
                             <constraint firstItem="UZp-Ou-0Hx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UmM-Cd-mQQ"/>
                             <constraint firstAttribute="trailing" secondItem="LEM-sG-MNa" secondAttribute="trailing" id="Z9j-Pg-gAf"/>
