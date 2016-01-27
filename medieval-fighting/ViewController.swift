@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,10 +33,10 @@ class ViewController: UIViewController {
         //hide startgame button
         startGame.hidden = true
         //unhide attack buttons(this has been replaced by firstAttack)
-       // player1Attack.hidden = false
-       // player2Attack.hidden = false
+        player1Attack.hidden = false
+        player2Attack.hidden = false
         printLbl.text = "Press attack to begin"
-        firstAttack()
+        //firstAttack()
         //play sound when pressed
         
     }
@@ -50,53 +51,52 @@ class ViewController: UIViewController {
         }
 
             if !player2.isAlive {
-            printLbl.text = "\(player1.name) Killed \(player2.name)!"
-            startGame.hidden = false
-            player1Attack.hidden = true
-            player2Attack.hidden = true
+                printLbl.text = "\(player1.name) Killed \(player2.name)!"
+                startGame.hidden = false
+                player1Attack.hidden = true
+                player2Attack.hidden = true
         }
         //hide player2 attack button for 2 seconds
-        let delay = 2.0
-        let time = dispatch_time(DISPATCH_TIME_NOW, Int64 (Double(delay) * Double(NSEC_PER_SEC)))
+        let delay = 1.0
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(Double(delay) * Double(NSEC_PER_SEC)))
         dispatch_after(time, dispatch_get_main_queue()) {
             self.player2Attack.hidden = false
+            self.player1Attack.hidden = true
         }
     }
     @IBAction func player2Attack(sender: UIButton) {
-        //attack
         player1Attack.hidden = true
         if player2.attemptAttack(player2.attackPower){
-            printLbl.text =  "Attacked \(player1.name) for \(player2.attackPower) HP"
+            printLbl.text = "Attacked \(player1.name) for \(player2.attackPower) HP"
         } else {
-            printLbl.text = "attack on \(player1.name) was unsuccessful!"
+            printLbl.text = "attack on \(player2.name) was unsuccessful!"
         }
-
-        //send info about attack to the bottom label
         if !player1.isAlive {
             printLbl.text = "\(player2.name) Killed \(player1.name)!"
             startGame.hidden = false
             player1Attack.hidden = true
             player2Attack.hidden = true
-        //hide player1 attack button for 2 seconds
-        let delay = 2.0
-        let time = dispatch_time(DISPATCH_TIME_NOW, Int64 (Double(delay) * Double(NSEC_PER_SEC)))
+        }
+        let delay = 1.0
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(Double(delay) * Double(NSEC_PER_SEC)))
         dispatch_after(time, dispatch_get_main_queue()) {
+            self.player2Attack.hidden = true
             self.player1Attack.hidden = false
-    }
-    
-    
-    }
+        }
+
+
+        
     }
     
     func firstAttack() {
         //generate code to see who gets to go first
         let rand = Int(arc4random_uniform(2))
         if rand == 0 {
-            player2Attack.hidden = true
-            player1Attack.hidden = false
-        } else {
             player1Attack.hidden = true
             player2Attack.hidden = false
+        } else {
+            player1Attack.hidden = false
+            player2Attack.hidden = true
         }
     }
         
