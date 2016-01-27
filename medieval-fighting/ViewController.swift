@@ -33,10 +33,10 @@ class ViewController: UIViewController {
         //hide startgame button
         startGame.hidden = true
         //unhide attack buttons(this has been replaced by firstAttack)
-        player1Attack.hidden = false
-        player2Attack.hidden = false
+        //player1Attack.hidden = false
+        //player2Attack.hidden = false
         printLbl.text = "Press attack to begin"
-        //firstAttack()
+        firstAttack()
         //play sound when pressed
         
     }
